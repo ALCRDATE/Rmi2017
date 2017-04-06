@@ -15,14 +15,14 @@ import serverrmirobot.interfaceRobot;
  * @author alcrdate
  */
 public class RobotRmiRobot {
-
+   
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args){
         try {
             interfaceRobot robot = (interfaceRobot) Naming.lookup("rmi://localhost:1099/rbt");
-           
+            //you can use another function
             System.out.println("le nouveau robot est de l'adress : " + robot.getAdress());
             boolean t = robot.intialiseRobot();
             while(true){
