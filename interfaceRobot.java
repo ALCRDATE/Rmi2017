@@ -17,8 +17,14 @@ public interface interfaceRobot extends Remote{
     void goToCharge() throws RemoteException;
     double batteryLevel() throws RemoteException;
     void sendState() throws RemoteException;
-    String getProgramme() throws RemoteException;
+    int getProgramme() throws RemoteException;
     String getAdress()throws RemoteException;
     boolean intialiseRobot() throws RemoteException;
     boolean iambusy() throws RemoteException;
+    boolean robotExiste() throws RemoteException;
+    void updateRobotBattery(int b) throws RemoteException;
+    int getTaskID() throws RemoteException;
+    void updateTaskProgrss(int p, int task) throws RemoteException;
+    int getProgress(int task) throws RemoteException;
+    void changeState(String state, int task) throws RemoteException;
 }
