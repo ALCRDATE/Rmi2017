@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author alcrdate
+ * @author karim88
  */
 public class Connexion {
     private String url,user,pswd;
